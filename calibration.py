@@ -50,7 +50,7 @@ raw_plot.setRange(yRange=[0, 3.3])
 data = np.random.normal(size=20)
 for j in range(4):
     raw_curves.append(raw_plot.plot(data, pen=pg.mkPen(
-                      color=pg.intColor(j, hues=5, alpha=255, width=3))))
+                      color=pg.intColor(j, hues=5, alpha=255), width=3)))
 
 d0.addWidget(raw_plotwidget)
 
@@ -63,8 +63,8 @@ force_plot.setClipToView(True)
 force_plot.setRange(yRange=[-1.5, 1.5])
 for j in range(3):
     force_curves.append(force_plot.plot(data, pen=pg.mkPen(
-                        color=pg.intColor(j, hues=5, alpha=255, width=3)
-                        )))
+                        color=pg.intColor(j, hues=5, alpha=255), width=3)
+                        ))
 
 d1.addWidget(force_plotwidget)
 
@@ -77,8 +77,8 @@ hyst_plot.setClipToView(True)
 hyst_plot.setRange(yRange=[-1.5, 1.5])
 for j in range(3):
     hyst_curves.append(hyst_plot.plot(data, pen=pg.mkPen(
-        color=pg.intColor(j, hues=5, alpha=255, width=3)
-    )))
+        color=pg.intColor(j, hues=5, alpha=255), width=3)
+    ))
 
 d3.addWidget(hyst_plotwidget)
 
@@ -91,8 +91,8 @@ calib_plot.setClipToView(True)
 calib_plot.setRange(yRange=[-1.5, 1.5])
 for j in range(3):
     calib_curves.append(calib_plot.plot(data, pen=pg.mkPen(
-                        color=pg.intColor(j, hues=5, alpha=255, width=3)
-                        )))
+                        color=pg.intColor(j, hues=5, alpha=255), width=3)
+                        ))
 
 d4.addWidget(calib_plotwidget)
 
